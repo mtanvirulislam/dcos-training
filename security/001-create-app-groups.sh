@@ -1,6 +1,6 @@
-# Application group making. The project must be assigned
-# to application groups. The application group is the
-# foundation for project isolation.
+# Restricting Access to DC/OS Service Groups
+
+# Create service groups: the tenants
 
 cat <<EOF | dcos marathon group add
 {
