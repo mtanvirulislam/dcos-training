@@ -1,4 +1,12 @@
 echo "Admin (superuser) login ..."
+
+# Available providers for login:
+#   dcos-users - Standard DC/OS user account (username and password)
+#   dcos-oidc-auth0 - OpenID Connect ID token that appears in the browser.
+#   ldap - LDAP user account (username and password)
+#
+# More here: https://github.com/dcos/dcos-cli/blob/master/design/login.md
+
 dcos auth login --provider=dcos-users --username admin
 
 echo "Application project delete ..."
